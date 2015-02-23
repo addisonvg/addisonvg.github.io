@@ -1,0 +1,541 @@
+* {
+  padding:0;
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.clearfix {
+   overflow: auto;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999!important;
+  height: 50px;
+  font-size: 18px;
+  color: 0065A9;
+  background: white;
+  }
+ 
+#navbar a:hover {
+  color: #F5A623;
+}
+ 
+li.menu:hover {
+  font-size: 20px;
+ 
+}
+
+#navbar.tiny {
+  height: 39px;
+  font-size: 14px;
+  background-color: grey;
+  opacity: 0.7;
+  color: #fff;
+  }
+ 
+#navbar.tiny a {
+  color: #fff;
+  }
+
+#navbar.tiny a:hover {
+  color: #0065A9;
+  font-size: 14px;
+  
+  }
+   
+.menu.tiny{
+  color: #fff;
+}
+
+.mobile-menu {
+  
+}
+#mobile-menu {
+  visibility: hidden;
+  height: 25px;
+  width: 25px;
+  opacity: 0; 
+  transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+}
+
+#titleSection {
+  padding-top: 60px;
+  padding-bottom: 10px;
+  background: #226BAA;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#topContacts {
+  float: right;
+}
+
+.education-entry, .work-entry {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#work-entry {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.work-entry.col-6 {
+  margin-right: 0;
+  padding: 10px;
+}
+
+.work-entry.col-6:hover {
+  background-color: F3F3F3#;
+  border-radius: 0px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+ /* -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.1) inset;*/
+}
+
+#proj-entry{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 10px;
+}
+
+.proj-entry {
+  margin right: 2.5%;  
+}
+
+.project-entry.col-4:hover {
+  background-color: #fff;
+  border-radius: 0px;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(245, 166, 35, 0.15) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(245, 166, 35, 0.15) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.4), 0 0 40px rgba(245, 166, 35, 0.15) inset;
+}
+
+.project-entry.col-4 {
+  padding-top: 10px;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#workExperience, #projects, #education, #mapDiv {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/*display projects & Education in rows*/
+#work-entry, #ed-entry {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10px;
+}
+
+div.education-entry {
+  padding-top: 5px;
+}
+
+#school {
+  margin-right: 2.5%;
+  height: 100px;
+  padding-bottom: 10px;
+}
+
+#online {
+  margin-left: 2.5%;
+  height: 100px;
+  padding-bottom: 10px;
+}
+
+#school.col-6:hover {
+  background-color: #F3F3F3;
+  border-radius: 0px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+}
+
+#online.col-6:hover {
+  background-color: #F3F3F3;
+  border-radius: 0px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+}
+
+body {
+  display: block;
+}
+
+h1#name {
+  padding-top: 20px;
+}
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  color: #F5A623;
+  line-height: 48px;
+  display: inline;
+}
+
+h2 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #0065A9;
+  opacity: 0.6;
+  line-height: 29px;
+  padding: 10px;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #999;
+  text-decoration: underline;
+  line-height: 22px;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-family: font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #4A4A4A;
+  line-height: 17px;
+}
+
+h2, h4, h5 {
+  padding:10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+.date-text {
+  font-family: font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 14px;
+  color: #999999;
+  line-height: 16px;
+  float: right;
+  padding-top: 5px;
+  padding-right: 15px;
+}
+
+.location-text {
+  font-family: font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 14px;
+  color: #999999;
+  line-height: 16px;
+  float: right;
+  
+}
+
+.date-text-left {
+  font-family: font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 14px;
+  color: #999999;
+  line-height: 16px;
+  padding-top: 5px;
+  padding-right: 0;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #333333;
+  line-height: 21px;
+  overflow-x: auto;
+}
+
+a {
+  color: #0065A9;
+  text-decoration: none;
+  margin-top: 0;
+  display: block;
+}
+
+#topContacts a {
+  color: #fff;
+}
+
+/*a:hover {
+  color: #0065A9;
+  text-decoration: bold;
+  font-size: 18px;
+  display: block;
+}*/
+
+.welcome-message {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 300px;
+  color: #F3F3F3;
+  line-height: 28px;
+  padding-right: 5%;
+  margin-bottom: 10px;
+}
+
+#skillsH3 {
+  color: #F5AE23;
+  display: none;
+}
+
+.orange {
+  background-color: #F5AE23;
+}
+
+.orange-text {
+  font-family: 'Fjalla One', sans-serif;
+  color: #F5AE23;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.orange-text-after {
+  color: #226BAA;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.white-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.gray {
+  background-color: #F3F3F3;
+  padding-bottom: 10px;
+  clear:both;
+}
+
+.dark-gray {
+  background-color: #4A4A4A;
+}
+
+/* TODO: Replace with image later */
+#header {
+  background-color: #226BAA;
+  padding-top: 10px;
+}
+
+h2#footer {
+  
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.center-content {
+  padding-top: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2.5%
+}
+
+ul {
+  list-style-type: none;
+}
+
+.biopic {
+  float: left;
+  padding: 10px;
+  width: 200px;
+  display: none;
+}
+
+img {
+  padding: 0 10px 10px 0;
+  width: 100%;
+  margin-left: 5%;
+}
+
+/* Bar chart stuff */
+.chart div {
+  font: 10px sans-serif;
+  background-color: #4A4A4A;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  height: 12px;
+  color: white;
+  display: inline-block;
+}
+
+span {
+  padding: 5px;
+}
+
+#letsConnect {
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+  float: none;
+}
+
+.col-4 {
+  width: 30%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.col-6 {
+  width: 44%;
+  margin: 0;
+}
+
+.col-8 {
+  width: 56%
+}
+
+
+@media only screen and (max-width: 1024px) {
+  #letsConnect {
+    padding-top: 5%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 175px;
+  }
+  .col-4 {
+    width: 46%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #letsConnect {
+    padding-top: 10%;
+  }
+  .biopic {
+    width: 150px;
+  }
+  .welcome-message {
+    display: none;
+  }
+  .col-4 {
+    width: 46%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  ul.flex-box.menu {
+    display: none;
+    background: #fff;
+    opacity: 0.9;
+    width: 50%;
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+    
+  }
+  #navbar a {
+    margin-bottom: 15px;
+  }
+  #navbar.tiny a {
+  color: #226BAA;
+  margin-bottom: 10px;
+  }
+  .mobile-menu {
+    display: block;
+    margin-top: 10px;
+    margin-left: 5%;
+    }
+  .col-4 {
+    width: 90%;
+    }
+  .project-entry.col-4 {
+    -webkit-filter: blur(0);
+    padding-top: 10px;
+    margin-top: 20px;
+    }
+  .col-6 {
+    width: 92%;
+    margin-top: 20px;
+    }
+  .col-8 {
+    width: 92%; 
+  }
+  h1 {
+    font-size: 20px;
+  }
+  #role {
+    font-size: 14px;
+  }
+  #workExperience, #projects, #education, #mapDiv {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+button.intl {
+  margin-left: 5%;
+  
+}
+
+@media only screen and (min-width: 750px) {
+  #skillsH3,
+  .biopic {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .mobile-menu {
+    display: none;
+  }
+}
